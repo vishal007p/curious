@@ -1,6 +1,6 @@
 
-import LogoSlider from "../slider/LogoSlider"
-import "./style.scss"
+ import "../../styles/components/banner.scss"
+import LogoSlider from "../logoSlider/LogoSlider"
 
 import Burgar from "/burgar.png"
 import { motion } from "framer-motion"

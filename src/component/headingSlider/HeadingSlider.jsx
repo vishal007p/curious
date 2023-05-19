@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss'
+import '../../styles/components/headingSlider.scss'
 import Marquee from 'react-fast-marquee';
 
 

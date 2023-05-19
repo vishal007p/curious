@@ -1,12 +1,12 @@
 import React from 'react';
-import './style.scss';
+ import '../../styles/components/heroSecton.scss'
 
 
 
 /**
  * 
  */
-const Comman = ({ heading, des, img }) => {
+const HeroSection = ({ heading, des, img }) => {
     return (
 
 
@@ -37,4 +37,4 @@ const Comman = ({ heading, des, img }) => {
 
 
 
-export default Comman;
+export default HeroSection;

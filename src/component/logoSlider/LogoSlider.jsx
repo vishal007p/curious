@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./style.scss"
+import "../../styles/components/LogoSlider.scss"
 
 import { Autoplay } from "swiper";
 

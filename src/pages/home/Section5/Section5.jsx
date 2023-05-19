@@ -1,6 +1,5 @@
 import React from 'react';
- 
-import './Section5.scss'
+ import  '../../../styles/pages/Home.scss'
 
 
 const CardDetils = [
