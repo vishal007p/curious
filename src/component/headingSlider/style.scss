@@ -1,0 +1,21 @@
+.HeadingSlider{
+    width: 100%;
+    height: 75px;
+    background-color:#FF73B5;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    .sliderContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+
+
+     h5{
+            font-size: 1.6rem;
+            color: #042F1A;
+        }
+    }
+}

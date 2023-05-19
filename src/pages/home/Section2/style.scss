@@ -1,0 +1,18 @@
+.main_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+    top: 0;
+    position: sticky;
+    background:#FFFFFF ;
+    z-index: 11;
+    height: 100vh;
+
+    .HeadingSection{
+        flex-direction: row-reverse;
+    }
+
+   
+}
