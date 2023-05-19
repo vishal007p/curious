@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import './style.scss'
+import './Section4.scss'
 import Comman from '../../../component/comman';
 
 

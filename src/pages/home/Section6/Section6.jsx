@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './style.scss'
+import './Section6.scss'
 
 
 
