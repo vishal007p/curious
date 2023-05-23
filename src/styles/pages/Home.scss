@@ -1,18 +1,22 @@
-
-
+@mixin CommanDisplayFlexCss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 // --------section  1--------------------
 
 
 
-.aboutSection{
+.aboutSection {
     background-color: #FF73B5;
     padding: 0px 0px 120px 0px;
     z-index: 999;
 }
- .wave{
+
+.wave {
     margin-top: -20rem;
- }
+}
 
 
 
@@ -20,39 +24,36 @@
 
 
 .main_section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    @include CommanDisplayFlexCss();
     width: 100%;
     padding: 100px 0px 100px 0px;
     top: 0;
     position: sticky;
-    background:#FFFFFF ;
+    background: #FFFFFF;
     z-index: 11;
     height: 100vh;
 
-    .HeadingSection{
+    .HeadingSection {
         flex-direction: row-reverse;
     }
 
-   
+
 }
 
 
 
 // -----------section 3---------------------------
 
-.section3{
- 
-    background-color:#D4ED6D;
+.section3 {
+
+    background-color: #D4ED6D;
     position: sticky;
     top: 0;
     z-index: 12;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    @include CommanDisplayFlexCss();
+
 }
 
 
@@ -62,27 +63,24 @@
 
 
 
-.section4{
+.section4 {
     background-color: #042F1A;
     position: sticky;
     top: 0;
     z-index: 13;
     height: 100vh;
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include CommanDisplayFlexCss();
 
     .HeadingSection {
 
-        .contentSection{
+        .contentSection {
 
 
-            h1{
+            h1 {
                 color: white;
             }
 
-            p{
+            p {
                 color: white;
             }
         }
@@ -104,9 +102,7 @@
     height: 100vh;
     z-index: 14;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-self: center;
+    @include CommanDisplayFlexCss();
     flex-direction: column;
     padding: 100px 0px 100px 0px;
     height: 100vh;
@@ -123,8 +119,7 @@
 
     .cardSection {
         width: 90%;
-        display: flex;
-        align-items: center;
+        @include CommanDisplayFlexCss();
         justify-content: space-around;
         padding: 20px;
         margin-top: auto;
@@ -134,9 +129,7 @@
             margin-top: 150px;
 
             .cardContent {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include CommanDisplayFlexCss();
                 flex-direction: column;
 
                 img {
@@ -149,13 +142,14 @@
                     font-size: 2.5rem;
                     font-weight: 200;
                 }
-                p{
-                     
-                    margin-top:20px;
+
+                p {
+
+                    margin-top: 20px;
                     font-size: 18px;
                     text-align: center;
                     font-weight: 100;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-family: 'Courier New', Courier, monospace;
 
                 }
             }
@@ -175,23 +169,21 @@
     position: relative;
     z-index: 16;
     overflow: hidden;
-padding-bottom: 150px;    // background-color: #042F1A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 150px; // background-color: #042F1A;
+    @include CommanDisplayFlexCss();
     flex-direction: column;
-    
-&::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 150vw;
-    border-radius: 150%;
-    height: 0;
-    padding-bottom: 150%;
-    background-color: #042F1A;
-}
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 150vw;
+        border-radius: 150%;
+        height: 0;
+        padding-bottom: 150%;
+        background-color: #042F1A;
+    }
 
     .headingSec {
         display: flex;
@@ -203,8 +195,7 @@ padding-bottom: 150px;    // background-color: #042F1A;
     .main_Slider {
         margin-top: 60px;
         width: 100%;
-        display: flex;
-        align-items: center;
+        @include CommanDisplayFlexCss();
         justify-content: space-around;
         position: relative;
         gap: 40px;
@@ -215,12 +206,10 @@ padding-bottom: 150px;    // background-color: #042F1A;
             height: 600px;
             background-color: #F95B77;
             border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include CommanDisplayFlexCss();
             flex-direction: column;
             overflow: hidden;
-            
+
 
             &:hover {
                 .marqueEffect {
@@ -244,7 +233,6 @@ padding-bottom: 150px;    // background-color: #042F1A;
                     text-align: center;
                     line-height: 120px;
                     font-weight: bold;
-
                     color: #042F1A;
                 }
             }
@@ -273,6 +261,28 @@ padding-bottom: 150px;    // background-color: #042F1A;
     }
 
 
+    .ButtonSection {
+        z-index: 999;
+        margin-top: 40px;
+        @include CommanDisplayFlexCss();
+        flex-direction: column;
+        overflow: hidden;
+
+        .viewBtn {
+
+            width: 150px;
+            height: 50px;
+            background-color: #FF73B5;
+            border-radius: 10px;
+            padding: 5px;
+
+            h1 {
+                color: #042F1A;
+
+            }
+        }
+    }
+
 }
 
 .marqueEffect {
@@ -291,3 +301,67 @@ padding-bottom: 150px;    // background-color: #042F1A;
         transform: translateX(-50%);
     }
 }
+
+
+
+
+// -----------------------section 7-----------------------
+
+
+.section7 {
+
+    width: 100%;
+    padding: 60px;
+    margin: auto 60px 60px 0px;
+    background-color: #042F1A;
+    position: relative;
+    z-index: 20;
+    @include CommanDisplayFlexCss();
+
+    .imgSection {
+        width: 50%;
+
+        img {
+            width: 90%;
+            border-radius: 10px;
+            height: 800px;
+        }
+    }
+
+    .contentSection {
+        width: 50%;
+
+        h2 {
+            font-size: 9rem;
+            color: #FFFFFF;
+            line-height: 120px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            margin: 20px 0px 20px 0px;
+            width: 80%;
+            font-weight: 100;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .visitBtn {
+            overflow: hidden;
+            width: 200px;
+            border-radius: 10px;
+            height: 50px;
+            background-color: #FF73B5;
+            padding: 6px;
+
+            h1 {
+                font-size: 2rem;
+                color: #042F1A;
+            }
+        }
+    }
+}
+
+ 
+
+ 

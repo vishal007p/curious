@@ -1,5 +1,7 @@
 
  import "../../styles/components/banner.scss"
+ 
+  
 import LogoSlider from "../logoSlider/LogoSlider"
 
 import Burgar from "/burgar.png"
@@ -47,6 +49,7 @@ const Banner = () => {
 
 
       <LogoSlider />
+     
     </div>
 
   )

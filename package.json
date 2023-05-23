@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "framer-motion": "^10.12.10",
+    "magicmouse.js": "^1.2.1",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
+    "react-animated-cursor": "^2.6.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.5.2",
     "swiper": "^9.3.2"

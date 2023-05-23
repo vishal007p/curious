@@ -1,0 +1,33 @@
+.AnimationDiv{
+    width: 200%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 200%;
+   
+    h1{
+        text-align: center;
+    }
+    
+    &:hover{
+        cursor: pointer;
+        animation-name: AnimaitonButtonDiv;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+ 
+    }
+  
+}
+ 
+@keyframes AnimaitonButtonDiv {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .main_banner {
@@ -12,7 +12,7 @@
     min-height: 100vh;
     @include commancss();
     flex-direction: column;
-    padding: 2rem 0rem;
+    padding: 6rem 0rem;
     padding-bottom: 18rem;
     position: relative;
     z-index: -888;
@@ -25,7 +25,7 @@
 
     .bannerE2 {
         position: absolute;
-      top: 430px;
+        top: 430px;
         left: 27%;
 
         img {
@@ -38,7 +38,7 @@
         position: absolute;
         right: 28%;
         top: 450px;
-       
+
 
         img {
 
@@ -56,7 +56,7 @@
 
 
         h1 {
-            font-size: clamp(1rem, 18vw, 30rem);
+            font-size: clamp(1rem, 19vw, 30rem);
             color: white;
             font-weight: 600;
             @include commancss();

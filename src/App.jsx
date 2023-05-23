@@ -1,6 +1,6 @@
 
 
-import './App.scss'
+import './styles/base/base.scss';
 import Header from './component/header/Header'
 import Home from './pages/home/Home'
 

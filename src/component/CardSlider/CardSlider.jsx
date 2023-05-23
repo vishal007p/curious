@@ -1,8 +1,5 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React, { useRef, useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import '../../styles/components/cardSlider.scss';
@@ -36,10 +33,6 @@ const CardSlider = () => {
                     <SwiperSlide>Slide 7</SwiperSlide>
                     <SwiperSlide>Slide 8</SwiperSlide>
                     <SwiperSlide>Slide 9</SwiperSlide>
-
-
-
-
 
 
                 </Swiper>

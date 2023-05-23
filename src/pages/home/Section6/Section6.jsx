@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import '../../../styles/pages/Home.scss';
+import AnimationButton from '../../../component/AnimationButton/AnimationButton';
 
 
 
@@ -138,6 +139,14 @@ const Section6 = () => {
 
                         ))
                     }
+                </div>
+
+                <div className='ButtonSection'>
+
+                    <div className='viewBtn'>
+                        <AnimationButton heading={"VIEW ALL"} />
+                    </div>
+
                 </div>
 
 

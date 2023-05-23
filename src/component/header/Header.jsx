@@ -1,4 +1,5 @@
-import "./style.scss"
+import '../../styles/layout/header.scss'
+import AnimationButton from '../AnimationButton/AnimationButton';
 
 const Header = () => {
     return <>
@@ -11,7 +12,9 @@ const Header = () => {
                 <li> <h3>Eat<br></br><span>Curious</span></h3></li>
                 <li>RECIPES</li>
 
-                <li>CONTACT US</li>
+                <div className='btn'>
+                    <AnimationButton heading={"CONTACT US"}/>
+                </div>
             </div>
 
         </div>
